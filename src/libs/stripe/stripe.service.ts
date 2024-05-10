@@ -1,0 +1,7 @@
+import {PaymentService} from "../../interfaces/paymentService";
+
+export class StripeService implements PaymentService {
+    async processPayment(amount: number): Promise<string> {
+        return 'Payment processed with Stripe';
+    }
+}
